@@ -37,8 +37,8 @@ async def get_city(message: types.Message):
         # название города
         city = message.text
         # объявление API ключа как переменную
-        os.environ["2c254a2efb0b9008ce295e94a0939a2f"] = "2c254a2efb0b9008ce295e94a0939a2f"
-        api_key = os.environ["2c254a2efb0b9008ce295e94a0939a2f"]
+        os.environ[" -Openweathermap API KEY- "] = "-Openweathermap API KEY-"
+        api_key = os.environ["-Openweathermap API KEY-"]
         # запрос к Openweathermap API
         url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&lang=ru"
         response = requests.get(url)
